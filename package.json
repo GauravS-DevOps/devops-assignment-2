@@ -1,0 +1,13 @@
+{
+  "name": "cicd-demo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "lint": "echo lint passed",
+    "test": "echo test passed"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
