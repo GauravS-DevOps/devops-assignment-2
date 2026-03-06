@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cicd-demo
+  template:
+    metadata:
+      labels:
+        app: cicd-demo
+    spec:
+      containers:
+      - name: cicd-demo
+        image: gauravsdevops/cicd-demo:latest
+        ports:
+        - containerPort: 3000
